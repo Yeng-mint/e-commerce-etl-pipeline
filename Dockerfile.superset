@@ -1,0 +1,17 @@
+#creamos un archivo build para el dockdr.yml
+#vamos a actualizar el docker-compose en el aparto de Apache_server
+#se reinicia nuevamente el contenedor de superset
+#instalamos drivers y paquetes necesarios para la conexion
+
+# sudo docker compose down superset
+#sudo docker compose build superset
+#sudo docker compose up -d superset
+
+FROM apache/superset:latest
+
+USER root
+RUN pip install --no-cache-dir \
+    psycopg2-binary \           
+    apache-superset[postgresql]
+
+USER superset

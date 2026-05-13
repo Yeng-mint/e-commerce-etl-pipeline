@@ -1,0 +1,21 @@
+#Entorno virtual py
+.venv/
+#Nuestras credenciales para el acceso a nuestro DWH
+.env
+#__pycache__/
+*.pyc
+*.pyo
+
+#Datos crudos ( raw data )
+data/raw/
+data/processed/
+
+#jupyter
+.ipynb_checkpoints/
+
+#vs
+.vscode/
+
+#sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+FROM apache/airflow:2.9.0
+
+# Instalamos las librerías necesarias para el pipeline ETL
+RUN pip install --no-cache-dir \
+    pandas \
+    sqlalchemy \
+    psycopg2-binary \
+    python-dotenv
+
+    
