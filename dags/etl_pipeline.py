@@ -1,5 +1,6 @@
 #archivo DAG
-
+from airflow import DAG
+from airflow.operators.pythclon import PythonOperator
 from datetime import datetime, timedelta
 import sys
 import os
